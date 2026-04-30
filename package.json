@@ -1,0 +1,18 @@
+{
+  "name": "@visual-req/code-review",
+  "version": "0.1.0",
+  "description": "通过 /code:review 对指定代码库做系统化代码评审，并输出可执行的改进建议与风险清单。",
+  "license": "MIT",
+  "bin": "bin/code-review.js",
+  "files": [
+    "bin",
+    "SKILL.md",
+    "README.md",
+    "LICENSE",
+    "docs",
+    "prompts"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}

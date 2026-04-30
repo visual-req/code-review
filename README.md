@@ -1,6 +1,6 @@
-# Code Review Skill（Trae）
+# Code Review Skill
 
-一个可直接放入 Trae 工作区使用的代码评审 Skill：通过 `/code:review` 对指定本地代码库进行系统化评审，并按严重度输出可执行的改进建议。
+通过 `/code:review` 对指定本地代码库进行系统化评审，并按严重度输出可执行的改进建议。
 
 ## 包含内容
 
@@ -9,14 +9,24 @@
 
 ## 安装
 
-将本仓库内容合并到你的 Trae 工作区根目录，并把 `SKILL.md` 放入 `.trae/skills/code/`（保持目录结构不变）：
+在你的工作区根目录执行：
 
-- `.trae/skills/code/SKILL.md`（来自本仓库根目录 `SKILL.md`）
+```bash
+npx github:visual-req/code-review install
+```
+
+将会写入：
+
+- `.trae/skills/code/SKILL.md`
 - `prompts/code-review/*.md`
 
-## 使用
+如需覆盖已存在文件：
 
-在 Trae 输入：
+```bash
+npx github:visual-req/code-review install --force
+```
+
+## 使用
 
 - `/code:review /abs/path/to/repo`
 - `/code:review /abs/path/to/repo 只看 src/auth 与 src/api，上线前风险优先`
