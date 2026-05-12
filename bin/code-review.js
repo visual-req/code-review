@@ -39,7 +39,7 @@ function printHelp() {
       "",
       "说明：",
       "  将本包内的 SKILL.md 与 prompts 安装到当前目录：",
-      "    - .trae/skills/code/SKILL.md",
+      "    - .skills/code/SKILL.md",
       "    - prompts/code-review/*.md",
       "",
       "选项：",
@@ -63,7 +63,7 @@ async function install({ cwd, force }) {
   const srcSkill = path.join(pkgRoot, "SKILL.md");
   const srcPromptsDir = path.join(pkgRoot, "prompts", "code-review");
 
-  const dstSkill = path.join(cwd, ".trae", "skills", "code", "SKILL.md");
+  const dstSkill = path.join(cwd, ".skills", "code", "SKILL.md");
   const dstPromptsDir = path.join(cwd, "prompts", "code-review");
 
   if (!(await pathExists(srcSkill))) {

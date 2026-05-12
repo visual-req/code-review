@@ -17,7 +17,7 @@ npx github:visual-req/code-review install
 
 将会写入：
 
-- `.trae/skills/code/SKILL.md`
+- `.skills/code/SKILL.md`
 - `prompts/code-review/*.md`
 
 如需覆盖已存在文件：
