@@ -1,5 +1,5 @@
 <h3 align="center">code-review</h3>
-<p align="center">Review a local codebase with <code>/code:review</code>, producing structured findings with location, snippet, impact, and corrective actions.</p>
+<p align="center"><code>/code:review</code> でローカルのコードベースを体系的にレビューし、場所・抜粋・影響・修正案を含む構造化された指摘を出力します。</p>
 <p align="center">
   <a href="https://github.com/visual-req/code-review/releases"><img src="https://img.shields.io/github/v/release/visual-req/code-review" alt="Release"></a>
   <a href="https://github.com/visual-req/code-review"><img src="https://img.shields.io/github/stars/visual-req/code-review?style=flat-square" alt="Stars"></a>
@@ -15,42 +15,42 @@
 
 Version: 0.1.0 · License: MIT ([LICENSE](LICENSE))
 
-## What's Included
+## 内容
 
-- Main prompt: `SKILL.md`
-- Rule groups (prompts): `prompts/code-review/*.md`
+- メインプロンプト：`SKILL.md`
+- ルール（prompts）：`prompts/code-review/*.md`
 
-## Install
+## インストール
 
-Run in your workspace root:
+ワークスペースのルートで実行：
 
 ```bash
 npx github:visual-req/code-review install
 ```
 
-It will write:
+書き込み先：
 
 - `.skills/code/SKILL.md`
 - `prompts/code-review/*.md`
 
-To overwrite existing files:
+既存ファイルを上書きする場合：
 
 ```bash
 npx github:visual-req/code-review install --force
 ```
 
-## Run
+## 実行
 
 - `/code:review /abs/path/to/repo`
-- `/code:review /abs/path/to/repo focus on src/auth and src/api, pre-release risk first`
+- `/code:review /abs/path/to/repo src/auth と src/api を重点、リリース前リスク優先`
 
-The command reads rules under `prompts/code-review/` and outputs:
+出力：
 
-- Summary (High/Medium/Low)
-- Findings (with location, issue, snippet, impact, corrective action, verification)
-- Positive Notes (up to 5)
+- Summary（High/Medium/Low）
+- Findings（場所・問題・コード抜粋・影響・修正案・検証）
+- Positive Notes（最大 5 件）
 
-## Docs
+## ドキュメント
 
 - docs/getting-started.md
 - docs/concept.md

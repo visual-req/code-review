@@ -1,5 +1,5 @@
 <h3 align="center">code-review</h3>
-<p align="center">Review a local codebase with <code>/code:review</code>, producing structured findings with location, snippet, impact, and corrective actions.</p>
+<p align="center">通过 <code>/code:review</code> 对指定本地代码库进行系统化评审，输出包含代码位置、片段、影响与纠正措施的结构化结论。</p>
 <p align="center">
   <a href="https://github.com/visual-req/code-review/releases"><img src="https://img.shields.io/github/v/release/visual-req/code-review" alt="Release"></a>
   <a href="https://github.com/visual-req/code-review"><img src="https://img.shields.io/github/stars/visual-req/code-review?style=flat-square" alt="Stars"></a>
@@ -15,42 +15,42 @@
 
 Version: 0.1.0 · License: MIT ([LICENSE](LICENSE))
 
-## What's Included
+## 包含内容
 
-- Main prompt: `SKILL.md`
-- Rule groups (prompts): `prompts/code-review/*.md`
+- 主提示词：`SKILL.md`
+- 规则组（prompts）：`prompts/code-review/*.md`
 
-## Install
+## 安装
 
-Run in your workspace root:
+在你的工作区根目录执行：
 
 ```bash
 npx github:visual-req/code-review install
 ```
 
-It will write:
+将会写入：
 
 - `.skills/code/SKILL.md`
 - `prompts/code-review/*.md`
 
-To overwrite existing files:
+如需覆盖已存在文件：
 
 ```bash
 npx github:visual-req/code-review install --force
 ```
 
-## Run
+## 运行
 
 - `/code:review /abs/path/to/repo`
-- `/code:review /abs/path/to/repo focus on src/auth and src/api, pre-release risk first`
+- `/code:review /abs/path/to/repo 重点看 src/auth 与 src/api，上线前风险优先`
 
-The command reads rules under `prompts/code-review/` and outputs:
+输出包含：
 
-- Summary (High/Medium/Low)
-- Findings (with location, issue, snippet, impact, corrective action, verification)
-- Positive Notes (up to 5)
+- Summary（High/Medium/Low）
+- Findings（包含：代码位置、代码问题、源代码片段、影响、纠正措施、验证）
+- Positive Notes（最多 5 条）
 
-## Docs
+## 文档
 
 - docs/getting-started.md
 - docs/concept.md
